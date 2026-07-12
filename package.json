@@ -1,0 +1,10 @@
+{
+  "name": "fincortex",
+  "version": "0.1.0",
+  "private": true,
+  "description": "FinCortex — the agentic compliance layer for India's securities market. SEBI Securities Market TechSprint @ GFF 2026.",
+  "scripts": {
+    "start": "node serve.js",
+    "dev": "node serve.js"
+  }
+}

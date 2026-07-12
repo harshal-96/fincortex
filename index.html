@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FinCortex — Agentic Compliance</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar ---------------------------------------------------------->
+    <aside class="side">
+      <div class="brand">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 2 4 7v9c0 7.2 5 11.6 12 14 7-2.4 12-6.8 12-14V7L16 2Z"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M11 16.5 14.5 20 21 12.5" fill="none" stroke="currentColor"
+                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">FinCortex</span>
+          <span class="brand-sub">Agentic Compliance</span>
+        </div>
+      </div>
+
+      <button class="demo-btn" id="demo-btn"><span class="demo-ico"></span><span>Play judge demo</span></button>
+
+      <nav class="nav" id="nav">
+        <button class="nav-item is-active" data-view="overview"><span class="nav-ico"></span> Overview</button>
+        <button class="nav-item" data-view="clearance"><span class="nav-ico"></span> Pre-Trade Clearance</button>
+        <button class="nav-item" data-view="surveillance"><span class="nav-ico"></span> Surveillance<span class="nav-badge">5</span></button>
+        <button class="nav-item" data-view="coverage"><span class="nav-ico"></span> Obligation Coverage</button>
+        <button class="nav-item" data-view="regwatch"><span class="nav-ico"></span> RegWatch</button>
+        <button class="nav-item" data-view="agents"><span class="nav-ico"></span> Agent Fabric</button>
+        <button class="nav-item" data-view="disclosure"><span class="nav-ico"></span> AI Disclosure</button>
+        <button class="nav-item" data-view="rules"><span class="nav-ico"></span> Rulebook</button>
+        <button class="nav-item" data-view="audit"><span class="nav-ico"></span> Audit Log</button>
+      </nav>
+
+      <div class="side-foot">
+        <div class="agent-status">
+          <span class="pulse"></span>
+          <div>
+            <div class="agent-status-title">4 agents live</div>
+            <div class="agent-status-sub">7 rules · continuous screening</div>
+          </div>
+        </div>
+        <a class="compare-link" href="/superapp/">Compare → Mosaic (Problem 3)</a>
+        <div class="side-foot-row">
+          <span class="side-tag">SEBI Securities Market TechSprint · GFF 2026</span>
+          <button class="theme-btn" id="theme-btn" title="Toggle theme"></button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main ------------------------------------------------------------->
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1 class="page-title" id="page-title">Overview</h1>
+          <p class="page-sub" id="page-sub">Live compliance posture across the desk</p>
+        </div>
+        <div class="topbar-right">
+          <div class="clock" id="clock">—</div>
+          <div class="score-chip"><span class="score-dot"></span> 98.5% clean</div>
+        </div>
+      </header>
+
+      <div class="view-host" id="view-host"><!-- views render here --></div>
+    </main>
+  </div>
+
+  <!-- Demo overlay -->
+  <div class="demo-layer" id="demo-layer" hidden>
+    <div class="demo-caption" id="demo-caption">
+      <div class="demo-step" id="demo-step">Step 1 / 7</div>
+      <div class="demo-title" id="demo-title"></div>
+      <div class="demo-say" id="demo-say"></div>
+      <div class="demo-controls">
+        <div class="demo-progress"><span id="demo-bar"></span></div>
+        <button class="demo-exit" id="demo-exit">Exit demo</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Report modal -->
+  <div class="modal-layer" id="modal-layer" hidden>
+    <div class="modal">
+      <div class="modal-head">
+        <div class="modal-title" id="modal-title">Report</div>
+        <button class="modal-x" id="modal-x" aria-label="Close"></button>
+      </div>
+      <pre class="modal-body" id="modal-body"></pre>
+      <div class="modal-foot">
+        <button class="btn-ghost" id="modal-copy">Copy JSON</button>
+        <button class="btn-run modal-dl" id="modal-dl">Download</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
